@@ -22,11 +22,12 @@ public class ObjectShooter : MonoBehaviour
 	public Vector2 shootDirection = new Vector2(1f, 1f);
 
 	public bool relativeToRotation = true;
-
-	private float timeOfLastSpawn;
+    [HideInInspector]
+	public float timeOfLastSpawn;
 
 	// Will be set to 0 or 1 depending on how the GameObject is tagged
-	private int playerNumber;
+    [HideInInspector]
+	public int playerNumber;
 
 
 	// Use this for initialization
@@ -40,7 +41,7 @@ public class ObjectShooter : MonoBehaviour
 
 
 	// Update is called once per frame
-	void Update ()
+	public virtual void Update ()
 	{
 		if(Input.GetKey(keyToPress)
 		   && Time.time >= timeOfLastSpawn + creationRate)
@@ -50,7 +51,7 @@ public class ObjectShooter : MonoBehaviour
 			GameObject newObject = Instantiate<GameObject>(prefabToSpawn);
 			newObject.transform.position = this.transform.position;
 			newObject.transform.eulerAngles = new Vector3(0f, 0f, Utils.Angle(actualBulletDirection));
-			newObject.tag = "Bullet";
+			//newObject.tag = "Bolt";
 
 			// push the created objects, but only if they have a Rigidbody2D
 			Rigidbody2D rigidbody2D = newObject.GetComponent<Rigidbody2D>();

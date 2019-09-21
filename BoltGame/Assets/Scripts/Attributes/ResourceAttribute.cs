@@ -40,6 +40,8 @@ public class ResourceAttribute : MonoBehaviour
 			{
 				Debug.LogWarning("User Interface is not in the scene, so the resource cannot be displayed and put in the inventory.");
 			}
+            //so here the bolt finds this script and will activate this method to reduce bolt count
+            FindObjectOfType<BoltCount>().CollectBolt();
 
 			Destroy(gameObject);
 		}

@@ -23,3 +23,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Examples/Roguelike/Roguelike.unity
     guid: ad15a26015e49439387b05c22fe7a962
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 082b8642d0f40f043a51dbd499ea7229
+  m_configObjects: {}
