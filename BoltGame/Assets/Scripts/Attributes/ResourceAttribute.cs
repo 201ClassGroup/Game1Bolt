@@ -8,14 +8,14 @@ public class ResourceAttribute : MonoBehaviour
 	public int resourceIndex = 0; //the "type of resource", this index point to the array in the centralised InventoryResources ScriptableObject
 	public int amount = 1;
 
-	private UIScript userInterface;
+	//private UIScript userInterface;
 
 
 	// Start is called at the beginning
 	private void Start()
 	{
 		// Find the UI in the scene and store a reference for later use
-		userInterface = GameObject.FindObjectOfType<UIScript>();
+		//userInterface = GameObject.FindObjectOfType<UIScript>();
 	}
 
 
@@ -32,6 +32,7 @@ public class ResourceAttribute : MonoBehaviour
 		if(otherCollider.CompareTag("Player")
 			|| otherCollider.CompareTag("Player2"))
 		{
+            /*
 			if(userInterface != null)
 			{
 				userInterface.AddResource(resourceIndex, amount, GetComponent<SpriteRenderer>().sprite);
@@ -40,6 +41,7 @@ public class ResourceAttribute : MonoBehaviour
 			{
 				Debug.LogWarning("User Interface is not in the scene, so the resource cannot be displayed and put in the inventory.");
 			}
+            */
             //so here the bolt finds this script and will activate this method to reduce bolt count
             FindObjectOfType<BoltCount>().CollectBolt();
 

@@ -128,7 +128,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  happenOnlyOnce: 0
+  happenOnlyOnce: 1
   filterByTag: 1
   filterTag: Bolt
 --- !u!1 &3373174668079143984

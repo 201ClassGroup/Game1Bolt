@@ -17,13 +17,14 @@ public class ConsumeResourceAction : Action
 	private void Start()
 	{
 		// Find the UI in the scene and store a reference for later use
-		userInterface = GameObject.FindObjectOfType<UIScript>();
+		//userInterface = GameObject.FindObjectOfType<UIScript>();
 	}
 
 
 
-	public override bool ExecuteAction(GameObject dataObject)
-	{
+	//public override bool ExecuteAction(GameObject dataObject)
+	//{
+        /*
 		if(userInterface != null)
 		{
 			bool hasEnoughResource = userInterface.CheckIfHasResources(checkFor, amountNeeded);
@@ -41,7 +42,8 @@ public class ConsumeResourceAction : Action
 			Debug.LogWarning("User Interface prefab has not been found in the scene. The action can't execute!");
 			return false;
 		}
-	}
+        */
+	//}
 
 
 

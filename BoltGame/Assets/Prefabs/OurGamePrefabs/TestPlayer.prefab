@@ -220,6 +220,7 @@ GameObject:
   - component: {fileID: 9078040790620472849}
   - component: {fileID: 5950645990329649926}
   - component: {fileID: 2138848692168987508}
+  - component: {fileID: 42345149}
   m_Layer: 0
   m_Name: BoltShooter
   m_TagString: Untagged
@@ -285,6 +286,19 @@ MonoBehaviour:
   playerNumber: 0
   maxBolts: 5
   shooterScript: {fileID: 5950645990329649926}
+--- !u!114 &42345149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2235840177025819430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c614fafba95d3c746827bfa3c2a3ea6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2029961957111300508}
 --- !u!1001 &3810022525329931401
 PrefabInstance:
   m_ObjectHideFlags: 0
