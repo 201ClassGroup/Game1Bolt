@@ -9,11 +9,11 @@ public class ShootTurnScript : MonoBehaviour
 
     void Update()
     {
-        if (player.eulerAngles.y < -1)
+       if (player.rotation.eulerAngles.y < 0)
         {
-            this.transform.eulerAngles = new Vector3(0,0,90);
+            this.transform.eulerAngles.Set(0, 0, 90); 
         }
-        else
+       else
         {
             this.transform.eulerAngles = new Vector3(0,0,0);
         }
