@@ -386,7 +386,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &593628019
 GameObject:
@@ -910,6 +910,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3971351073382574291, guid: 2165b61f4da86f048bce1c62b190ada9,
+        type: 3}
+      propertyPath: prefabToSpawn
+      value: 
+      objectReference: {fileID: 106988, guid: 15dec7b07032b2f4aa6f855bfbe120f7, type: 3}
+    - target: {fileID: 3971351073382574291, guid: 2165b61f4da86f048bce1c62b190ada9,
+        type: 3}
+      propertyPath: shootDirection.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971351073382574291, guid: 2165b61f4da86f048bce1c62b190ada9,
+        type: 3}
+      propertyPath: shootDirection.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2138848692168987508, guid: 2165b61f4da86f048bce1c62b190ada9,
         type: 3}
       propertyPath: shooterScript
@@ -1059,7 +1074,7 @@ PrefabInstance:
     - target: {fileID: 3374352135576213236, guid: a31ab8c32c672d442850ead1bd48a88e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3374352135576213236, guid: a31ab8c32c672d442850ead1bd48a88e,
         type: 3}
