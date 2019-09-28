@@ -5,18 +5,25 @@ using UnityEngine;
 public class ShootTurnScript : MonoBehaviour
 {
     public Transform player;
+    public Transform shooterPos;
+    public BoltCount shooter;
 
 
     void Update()
     {
-       if (player.rotation.eulerAngles.y < 0)
+
+        if (player.rotation.y <= (-180))
         {
-            this.transform.eulerAngles.Set(0, 0, 90); 
+            Debug.Log("Facing left");
+            Debug.Log(this.transform.eulerAngles);
+            //shooter.shootDirection.Set(-1 , 1);
         }
-       else
+        else //if (player.eulerAngles.y > -180)
         {
-            this.transform.eulerAngles = new Vector3(0,0,0);
+
+            Debug.Log("Facing right");
         }
+        
     }
 
 }//end of stript

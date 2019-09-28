@@ -7,7 +7,7 @@ public class BoltCount : ObjectShooter
 
     public int maxBolts;
     int boltCount;
-    public ObjectShooter shooterScript;
+    //public ObjectShooter shooterScript;
 
     // Start is called before the first frame update
     void Start()
